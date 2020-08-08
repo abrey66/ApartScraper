@@ -1,0 +1,434 @@
+/* default styles for extension "tx_openimmo" */
+		.tx-openimmo.bootstrap4 .card {
+			overflow: hidden;
+		}
+	
+		/* Search view */
+		.form-left .form-group {
+			margin-bottom: 10px;
+			display: inline-block;
+			width: 100%;
+		}
+		.form-top .control-label,
+		.form-left .control-label {
+			margin-bottom: 0;
+		}
+		.tx-openimmo.bootstrap4 .form-top span,
+		.tx-openimmo.bootstrap4 .form-left span {
+			font-size: 0.8rem;
+		}
+		.checkboxes {
+			overflow-x: hidden;
+			overflow-y: scroll;
+			max-height: 200px;
+			border: 1px solid #ccc;
+			padding-left: 10px;
+			background-color: #fff;
+		}
+		.tx-openimmo select option.option-group {
+			font-weight: bold;
+		}
+		#openimmo-search-form .checkbox {
+			margin-top: 5px;
+		}
+		#openimmo-list-form .openimmo-list-result-label {
+			line-height: 30px;
+			margin: 0;
+			padding-top: 4px;
+		}
+		#openimmo-list-form button,
+		#openimmo-search-form button {
+			width: 100%
+		}
+
+		.immobilie-list-item.highlight {
+			background-color: #eee;
+		}
+	
+		/* Teaser elements */
+		.openimmo-teaser-item img {
+			width: 100%;
+			height: auto;
+		}
+		.openimmo-teaser-item .openimmo-teaser-actions,
+		.openimmo-teaser-item a.btn {
+			width: 100%;
+		}
+	
+		/* Quick search */
+		#openimmo-quick-search-form .btn-group {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		#openimmo-quick-search-form .btn-group a,
+		#openimmo-quick-search-form .btn-group button {
+			flex-grow: 1;
+		}
+	
+		/* Details */
+		.tx-openimmo .openimmo-details-images {
+			padding: 4px;
+			background-color: #fff;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large {
+			position: relative;
+			overflow: hidden;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large .openimmo-details-image-large {
+			cursor: pointer;
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large .openimmo-details-image-large img {
+			width: 100%;
+			height: auto;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large .openimmo-details-image-large span {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.7);
+			text-align: center;
+			padding: 2px;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large .openimmo-details-image-large.active {
+			cursor: pointer;
+			z-index: 2;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large .modal-dialog {
+			max-width: 800px;
+		}
+		.tx-openimmo .openimmo-details-images .openimmo-details-images-large .modal-dialog .modal-content {
+			width: 100%;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails {
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			min-height: 77px;
+			margin-top: 4px;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails > * {
+			float: left;
+			display: block;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails > a {
+			width: 30px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 99;
+			text-align: center;
+			font-size: 24px;
+			padding-top: 22px;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails a.openimmo-details-image-previous {
+			left: 0;
+	
+			background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+			background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+			background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+			background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+			background-repeat: repeat-x;
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails a.openimmo-details-image-next {
+			right: 0;
+			background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+			background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+			background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+			background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+			background-repeat: repeat-x;
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+		}
+	
+	
+		.tx-openimmo .openimmo-details-image-thumbnails ul {
+			width: 9999px;
+			padding: 0;
+			margin: 0;
+    		list-style: none;
+			height: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails ul li {
+			float: left;
+			padding: 0;
+			margin: 0 1px;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails ul li a {
+			display: block;
+			border: 1px solid transparent;
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails ul li a:hover {
+			border: 1px solid {$themes.configuration.colors.primary};
+		}
+		.tx-openimmo .openimmo-details-image-thumbnails ul li.active a {
+			border: 1px solid {$themes.configuration.colors.primary};
+		}
+
+		.tx-openimmo .energiepass {
+			overflow: visible;
+		}
+		.tx-openimmo .energiepass .strip-wrapper {
+			position: relative;
+		}
+		.tx-openimmo .energiepass .strip-wrapper small {
+			width: 100%;
+		}
+		.tx-openimmo .energiepass .strip-wrapper small span.pull-left {
+			width: 40px;
+			text-align: left;
+		}
+		.tx-openimmo .energiepass .strip-wrapper small span.pull-right {
+			width: 40px;
+			text-align: right;
+		}
+		.tx-openimmo .energiepass .strip-wrapper .strip {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5cb85c+0,f0ad4e+50,b94a48+100 */
+			background: rgb(92, 184, 92); /* Old browsers */
+			background: -moz-linear-gradient(left, rgba(92, 184, 92, 1) 0%, rgba(240, 173, 78, 1) 50%, rgba(185, 74, 72, 1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, rgba(92, 184, 92, 1) 0%, rgba(240, 173, 78, 1) 50%, rgba(185, 74, 72, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, rgba(92, 184, 92, 1) 0%, rgba(240, 173, 78, 1) 50%, rgba(185, 74, 72, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb85c', endColorstr='#b94a48', GradientType=1); /* IE6-9 */
+			width: 100%;
+			height: 10px;
+			margin-bottom: 15px;
+			border-radius: 3px;
+		}
+		.tx-openimmo .energiepass .strip-wrapper .popover {
+			position: absolute ;
+			top: 0;
+			left: 0;
+			transform: translateX(-80px) translateY(30px) translateZ(0px);
+			width: 160px;
+			text-align: center;
+		}
+
+		.openimmo-details-actions.btn-group {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			/*width: 100%;*/
+			margin-bottom: 20px;
+		}
+		.openimmo-details-actions.btn-group a,
+		.openimmo-details-actions.btn-group button {
+			flex-grow: 1;
+		}
+		.tx-openimmo.show.bootstrap4 dt {
+			float: left;
+			margin-right: 10px;
+		}
+		.tx-openimmo.show.bootstrap4 .openimmo-details-description dt {
+			float: none;
+			margin-right: 0;
+		}
+	
+		/* PRO VERSION */
+		#openimmo-google-map-overview {
+			width: 100%;
+			height: 400px;
+		}
+		#openimmo-google-map-points-of-interest {
+			width: 100%;
+			height: 500px;
+		}
+		/* All map marker */
+		.openimmo-google-map-point {
+			font-size: 18px;
+			position: absolute;
+			cursor: pointer;
+			padding: 0;
+			text-align: center;
+		}
+		/* Immobilie marker on points of interest */
+		#openimmo-google-map-immobilie {
+			color: {$themes.configuration.colors.primary};
+			border: 1px solid {$themes.configuration.colors.primary};
+			border-radius: 50%;
+			background-color: rgba(99, 99, 99, 0.5);
+			line-height: 48px;
+			height: 50px;
+			width: 50px;
+		}
+		/* Immobilie marker on overview map */
+		.openimmo-google-map-point.openimmo-google-map-overview {
+			color: {$themes.configuration.colors.primary};
+			border: 1px solid {$themes.configuration.colors.primary};
+			border-radius: 50%;
+			background-color: rgba(99, 99, 99, 0.5);
+			line-height: 48px;
+			height: 50px;
+			width: 50px;
+		}
+		/* Points of interest marker */
+		.openimmo-google-map-point.openimmo-google-map-points-of-interest {
+			background-color: rgba(99, 99, 99, 0.8);
+			color: {$themes.configuration.colors.secondary};
+			border-color: red;
+			border: 1px solid {$themes.configuration.colors.secondary};
+			border-radius: 4px;
+			line-height: 28px;
+			width: 30px;
+			height: 30px;
+			margin-bottom: 4px;
+		}
+		.openimmo-google-map-point.openimmo-google-map-points-of-interest:after {
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 5px solid {$themes.configuration.colors.secondary};
+			content: "";
+			height: 0;
+			left: 11px;
+			position: absolute;
+			top: 29px;
+			width: 0;
+		}
+		/* Points of interest button group */
+		.openimmo-google-map-points-of-interest-buttons.btn-group {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+		}
+		.openimmo-google-map-points-of-interest-buttons.btn-group button {
+			flex-grow: 1;
+		}
+
+		/* Bookmarks */
+		.btn-bookmarks .fa.fa-check-square-o {
+			display: none;
+		}
+		.btn-bookmarks.bookmarked .fa.fa-check-square-o {
+			display: inline-block;
+		}
+		.btn-bookmarks.bookmarked .fa.fa-square-o {
+			display: none;
+		}
+		.openimmo-bookmarks-button .openimmo-bookmarks-button-label {
+			display: none;
+		}
+		.openimmo-bookmarks-button .openimmo-bookmarks-item-count {
+			display: inline-block;
+		}
+		.openimmo-bookmarks-button .openimmo-bookmarks-item-label {
+			display: none;
+		}
+		.openimmo-bookmarks-button .openimmo-bookmarks-item-label.active {
+			display: inline-block;
+		}
+		.openimmo-bookmarks-actions.openimmo-bookmarks-empty,
+		 .openimmo-bookmarks-list-empty-message.openimmo-bookmarks-not-empty {
+			display: none;
+		}
+
+		/* Search request */
+		#openimmo-search-request-map {
+			width: 100%;
+			height: 300px;
+		}
+
+		/* Rating request */
+
+		#rating-steps {
+			overflow: hidden;
+		}
+		#rating-steps-slide {
+			width: 99999px;
+		}
+		.rating-step {
+			float: left;
+			margin-right: 15px;
+		}
+		.rating-step h2.rating-step-headline {
+			margin-top: 10px;
+			border-top: 1px solid #eee;
+			padding-top: 30px;
+			margin-bottom: 20px;
+		}
+
+		.openimmo-rating-request h4 {
+			text-decoration: none;
+			width: 100%;
+			display: inline-block;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.openimmo-rating-request .card .image,
+		.openimmo-rating-request .card .image-hover {
+			width: 100%;
+			height: 200px;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		.openimmo-rating-request .card .image-hover {
+			display: none;
+		}
+		.openimmo-rating-request a:hover .image,
+		.openimmo-rating-request a.active .image {
+			display: none;
+		}
+		.openimmo-rating-request a:hover .image-hover,
+		.openimmo-rating-request a.active .image-hover {
+			display: block;
+		}
+
+		.rating-address-widget-map {
+			height: 300px;
+			width: 100%;
+		}
+		/* Rating request: progress bar */
+		.openimmo-rating-request ul#rating-progress-bar {
+			width: auto;
+    		display: inline-block;
+			height: 30px;
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+		.openimmo-rating-request ul#rating-progress-bar::after {
+			content: "";
+			position: absolute;
+			top: 13px;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: #eee;
+			z-index: -1;
+		}
+		.openimmo-rating-request ul#rating-progress-bar li {
+			float: left;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			padding-top: 4px;
+			background-color: #eee;
+			cursor: default;
+		}
+		.openimmo-rating-request ul#rating-progress-bar li:last-child {
+			margin-right: 0;
+		}
+		.openimmo-rating-request ul#rating-progress-bar li.active {
+			background-color: {$themes.configuration.colors.primary};
+			color: #fff;
+		}
+ 		.address-widget label {
+			white-space: nowrap;
+		}
+		/* Rating request: finish form */
+		.rating-finish-form .radio-label {
+			width: 100%;
+			display: inline-block;
+		}
+
