@@ -307,7 +307,7 @@ class Site_DEGEWO_Handler(object):
 
             #maybe just an empty DIV
             myDIV += "<DIV />"
-
+#some comment
         if not (hasNewAppartments):
             if onlyWBSAppartments:
                 return "All new ads require WBS"
