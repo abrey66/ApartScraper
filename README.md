@@ -23,6 +23,6 @@ There is no software in the AI-business that does not rely on structured bulk da
 This **Github Open Source Project** should transfer knowledge of how to create working AI-solutions.
 The specific ApartScraper context is: 
 
-1. Learning Python, Git, HTML, CSS and some fancy extra-knwo how 'on the fly'.
+1. Learning Python, Git, HTML, CSS and some fancy extra know-how 'on the fly'.
 2. Getting accustomed to IT project management techniques in software design.
 3. Comparing Python based frameworks like BeautifulSoup, Selenium or Scrapy.
